@@ -1,6 +1,6 @@
 ### WebmapRB
 
-A simple but useful web services enumerator for large infrastructures.
+A simple but useful web services enumerator for large infrastructures. WebmapRB expects a list of domains or ips inside a file (they can be mixed and IPs can be in CIDR format).
 
 #### Dependencies
 
