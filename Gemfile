@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+gem 'nokogiri'
+gem 'netaddr', '~> 1.5.1'
+gem 'colorize'
+gem 'terminal-table'
+gem 'curb'
