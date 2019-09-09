@@ -6,8 +6,8 @@ A simple but useful web services enumerator for large infrastructures. WebmapRB 
 
 1. Ruby, of course.
 2. If you doesn't already have bundler installed ```gem install bundler```
-3. Nokogiri requires libxslt-dev and libxml2-dev. Also build-essential may be required.
-4. Curb requires libcurl and libcurl-dev.
+3. Nokogiri requires ```libxslt-dev``` and ```libxml2-dev```. Also ```build-essential``` may be required.
+4. Curb requires ```libcurl``` and ```libcurl-dev```.
 5. ```bundle install``` (inside projects folder)
 
 #### Usage
