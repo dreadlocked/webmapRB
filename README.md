@@ -8,7 +8,7 @@ A simple but useful web services enumerator for large infrastructures. WebmapRB 
 2. If you doesn't already have bundler installed ```gem install bundler```
 3. ```bundle install``` (inside projects folder)
 
-It's usually as simple as this, but if you have system library issues then try to do and repeat step 3:
+It's usually as simple as that, but if you have system library issues then try to do and repeat step 3:
 
 ```apt install build-essential libcurl3 libcurl3-gnutls libcurl4-openssl-dev libxml2-dev libxslt-dev```
 
