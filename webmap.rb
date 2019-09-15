@@ -241,21 +241,24 @@ def main
   File.foreach($options[:file]) { |line|  urls << line.chomp}
   urls = normalize(urls)
   launch(urls)
-  table = get_table()
+    
+  # Save table to a csv.
+  if $options[:csv] then
+    to_csv($options[:file])
+    puts "[+] CSV saved to: #{$options[:file]}.csv".green.bold
+  end
 
-  puts table
+  begin
+    table = get_table()
+  rescue
+    puts "Error when generating table."
+  end
   
   # Save table to a file.
   file = File.open($options[:file] + ".table", "w")
   file.puts table
   file.close
   puts "[+] ASCII table saved to: #{$options[:file]}.table".green.bold
-
-  # Save table to a csv.
-  if $options[:csv] then
-    to_csv($options[:file])
-    puts "[+] CSV saved to: #{$options[:file]}.csv".green.bold
-  end
 
 end
 
